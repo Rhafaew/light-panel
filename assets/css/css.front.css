@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* ///// BOOTS ///// */
+
+@media only screen and (max-width: 1024px){
+    .container{width:95% !important}
+}
+
+/* ICONS SIZE */
+.material-icons.tiny { font-size: 1rem !important; }
+.material-icons.small { font-size: 1.5rem !important; }
+.material-icons.medium { font-size: 3rem !important; }
+.material-icons.large { font-size: 6rem !important; }
+
+/* Rules for sizing the icon. */
+.material-icons.md-14 { font-size: 14px; }
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+.img-thumb{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -ms-object-fit: cover;
+    -ms-object-position: center;
+}
