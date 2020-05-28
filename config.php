@@ -20,7 +20,7 @@ date_default_timezone_set('America/Porto_Velho');
 
 
 // MOSTRA ERROS DO PHP
-ini_set('display_errors', TRUE);
+ini_set('display_errors', false);
 
 session_start();
 

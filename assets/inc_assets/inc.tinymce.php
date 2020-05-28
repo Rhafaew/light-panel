@@ -100,6 +100,50 @@ Sed tristique nisl ex. In sed elementum nulla, nec consectetur est. Donec rhoncu
             'insertdatetime media nonbreaking save table contextmenu directionality',
             'emoticons template paste textcolor colorpicker textpattern imagetools'
         ],
+        toolbar1: "undo | redo | removeformat | bold | italic | underline | alignleft | aligncenter | alignright | alignjustify | forecolor | backcolor | hr | styleselect | image | media | link | unlink | code",
+        image_advtab: true,
+        image_caption: true,
+        media_live_embeds: true,
+        imagetools_cors_hosts: ['tinymce.com', 'codepen.io'],
+        content_css: [
+            '../../../assets/css/materialize.min.css',
+            '../../../assets/css/css.admin.css'
+        ],
+
+        file_browser_callback: function (field, url, type, win) {
+            tinyMCE.activeEditor.windowManager.open({
+                file: '/assets/js/kcfinder/browse.php?opener=tinymce4&field=' + field + '&type=' + type,
+                title: 'ARQUIVOS',
+                width: 800,
+                height: 600,
+                inline: true,
+                close_previous: false
+            },
+                    {
+                        window: win,
+                        input: field
+                    });
+            return false;
+        }
+    });
+
+
+    tinymce.init({
+        selector: ".editor_txt",
+        inline: false,
+        width: 'auto',
+        height: 240,
+        menubar: false,
+        language: 'pt_BR',
+        theme: 'modern',
+        skin: 'whiteblue',
+        toolbar_items_size: 'small',
+        plugins: [
+            'advlist autolink lists link image charmap print preview hr anchor pagebreak spellchecker codesample',
+            'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+            'insertdatetime media nonbreaking save table contextmenu directionality',
+            'emoticons template paste textcolor colorpicker textpattern imagetools'
+        ],
         toolbar1: "undo redo removeformat bold italic underline | alignleft aligncenter alignright alignjustify hr image media link unlink | code",
         image_advtab: true,
         image_caption: true,

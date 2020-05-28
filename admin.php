@@ -19,7 +19,7 @@ endif;
 	<? require_once 'assets/inc_assets/inc.global.css.php'; ?>
 	<? require_once 'assets/inc_assets/inc.admin.css.php'; ?>
     </head>
-    <body class="grey-text text-darken-1 grey lighten-3">
+    <body class="grey-text text-darken-1">
         <h1 class="hide">Administração</h1>
         <!-- HEADER -->
 	<? require_once 'modulos/admin/main/header.php'; ?>
